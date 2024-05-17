@@ -1,0 +1,133 @@
+body{
+    
+    justify-content:center;
+    align-items: center;
+    min-height: 20vh;
+    background-color: rgb(138, 138, 138);
+    margin: 70px;
+}
+
+header{
+
+    border-radius: 150px;
+
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 50px;
+    
+
+    background-color: #333; /* Dark grey background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add some padding around the header content */
+    text-align: center; /* Center-align the text */
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+    margin: 15px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#searchInput{
+    border-radius: 150px;
+
+    border-color: red;
+    width: 50%;
+    max-width: 500px;
+    height: 50px;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    padding-left: 34px;
+}
+
+#content{
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#addUserButton{
+
+    border-radius: 30px;
+    width: 55%;
+    max-width: 1000px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+
+    transition: height 1s ease; /*expand */
+
+
+
+
+}
+
+#addUserButton:hover{
+
+    width: 55%;
+    border-color: #ff00aa;
+    animation: borderMove 2s linear infinite;
+    border-radius: 30px;
+
+
+}
+
+@keyframes borderMove {
+    0% {
+        border-color: #ff0000; /* Start with red border color */
+    }
+    50% {
+        border-color: #00ff00; /* Change border color to green */
+    }
+    100% {
+        border-color: #0000ff; /* Change border color to blue */
+    }
+}
+
+#addUserButton.hover-style:hover {
+    transition: height 1s ease; /*expand */
+
+    width: 55%;
+    border-color: #ff00aa;
+    animation: borderMove 2s linear infinite;
+    
+
+}
+
+#addUserButton.active-style {
+    transition: height 1s ease; /*expand */
+    border-radius: 30px;
+
+    width: 55%;
+    border-radius: 30px;
+    height: 200px;
+    background-color: #ffffff;
+
+    
+}
+
+#contactFormContainer{
+    margin: 0px 100px;
+    display: flexbox;
+    align-content: center;
+    justify-content: center;
+}
+
+#contactFormContainer input {
+    display: flexbox;
+    width: 10%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+
