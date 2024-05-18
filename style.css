@@ -36,10 +36,10 @@ nav{
 #searchInput{
     border-radius: 150px;
 
-    border-color: red;
+    border-color: rgb(0, 0, 0);
     width: 50%;
     max-width: 500px;
-    height: 50px;
+    height: 30px;
 
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
@@ -57,8 +57,8 @@ nav{
 #addUserButton{
 
     border-radius: 30px;
-    width: 55%;
-    max-width: 1000px;
+    width: 65%;
+    max-width: 550px;
     height: 50px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
@@ -116,18 +116,88 @@ nav{
 }
 
 #contactFormContainer{
-    margin: 0px 100px;
-    display: flexbox;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15%;
     align-content: center;
-    justify-content: center;
+    flex-direction: column;
+
 }
 
 #contactFormContainer input {
-    display: flexbox;
-    width: 10%;
+     
+    margin: 5px auto;
+
+    width: 50%;
+    max-width: 300px;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
+    border-radius: 50px;
+  }
+
+#contactButtonContainer{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+
+}
+
+  #contactButtonContainer button {
+    margin: 20px 50px;
+    
+    width: 20%;
+    max-width: 200px;
+    padding: 10px 0px;
+    border: 1px solid #000000;
     border-radius: 5px;
   }
+
+  #contactCard{
+    display: none;
+
+
+    border-radius: 20px;
+    border: 2px solid #000000;
+
+    padding-top: 10px;
+    margin: 10px auto;
+    width: 30%;
+    min-width: 400px;
+    
+    background-color: #9f9faa;
+ 
+   }
+
+#contactCard.show {
+    animation: fadeIn 1s forwards;
+}
+
+#contactCard.hide {
+     animation: fadeOut 0.51s forwards;
+
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left:1000px;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
 
 
